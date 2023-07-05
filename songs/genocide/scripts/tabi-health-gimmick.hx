@@ -51,11 +51,11 @@ function onDadHit(event:NoteHitEvent) {
         }
     }
 
-    if (drainHealth == true && health > 0.03 && healthBar.x > 343.2 || healthBarBG.x > 343.2) {
+    if (drainHealth == true && health > 0.001 && healthBar.x > 343.2 || healthBarBG.x > 343.2) {
         health -= 0.03;
     }
 
-    if (event.note.isSustainNote && health > 0.03) {
+    if (event.note.isSustainNote && health > 0.001) {
         health -= 0.0005;
         FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom + 0.05}, Conductor.crochet / 2000); 
         // trace("Yo Hold note");
