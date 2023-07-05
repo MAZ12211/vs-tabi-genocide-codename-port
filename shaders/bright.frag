@@ -1,5 +1,3 @@
-// Taken from VS. Tabi source code
-
 #pragma header
 
 		uniform float brightness;
