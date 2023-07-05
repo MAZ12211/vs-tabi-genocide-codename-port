@@ -1,0 +1,6 @@
+<!DOCTYPE codename-mod-options>
+<!-- TEMPLATE FOR CUSTOM OPTIONS!!! -->
+<menu name="Genocide port" desc="Kept genociden' all over the floor">
+	<checkbox id="shaderShit" name="Disable shaders" />
+	<checkbox id="shakeShit" name="Disable shaking"/>
+</menu>

@@ -1,0 +1,15 @@
+<!DOCTYPE codename-engine-character>
+<character isPlayer="false" icon="tabi-crazy" flipX="false" holdTime="6.1" x="420" camx="50" camy="0"> <!-- CONVERTED VIA psychjsontocodenamexml.py by Burgerballs -->
+
+   <anim name="idle" anim="MadTabiIdle" loop="false" x="607" y="-31"/>
+   <anim name="singLEFT" anim="MadTabiLeft" loop="false" x="814" y="-20"/>
+   <anim name="singDOWN" anim="MadTabiDown" loop="false" x="672" y="-80"/>
+   <anim name="singUP" anim="MadTabiUp" loop="false" x="643" y="67"/>
+   <anim name="singRIGHT" anim="MadTabiRight" loop="false" x="600" y="-40"/>
+   <anim name="singRIGHT-loop" anim="MadTabiRight" loop="true" x="600" y="-40" indices="8,9,10,11,12,13"/>
+   <anim name="singDOWN-loop" anim="MadTabiDown" loop="true" x="672" y="-80" indices="8,9,10,11,12,13"/>
+   <anim name="singUP-loop" anim="MadTabiUp" loop="true" x="643" y="67" indices="8,9,10,11,12,13"/>
+   <anim name="singLEFT-loop" anim="MadTabiLeft" loop="true" x="814" y="-20" indices="8,9,10,11,12,13"/>
+   <anim name="idle-loop" anim="MadTabiIdle" loop="true" x="607" y="-31" indices="8,910,11,12,13,11,910,11,12,13,11,9"/>
+
+</character>

@@ -1,0 +1,21 @@
+<!DOCTYPE codename-engine-character>
+<character x="0" y="480" camx="10" icon="bf-tabi-crazy" isGF="false" camy="141" iconColor="-10855846" scale="1" flipX="true" isPlayer="true" holdTime="4" gameOverChar="bf-knife" antialiasing="true" sprite="bf-tabi-crazy">
+	<anim loop="false" x="-11" anim="BF idle dance" fps="24" y="32" name="idle" indices="[]"/>
+	<anim loop="false" x="-3" anim="BF NOTE LEFT0" fps="24" y="18" name="singLEFT" indices="[]"/>
+	<anim loop="false" x="-28" anim="BF NOTE DOWN0" fps="24" y="-18" name="singDOWN" indices="[]"/>
+	<anim loop="false" x="-53" anim="BF NOTE UP0" fps="24" y="53" name="singUP" indices="[]"/>
+	<anim loop="false" x="-52" anim="BF NOTE RIGHT0" fps="24" y="23" name="singRIGHT" indices="[]"/>
+	<anim loop="false" x="-7" anim="BF NOTE LEFT MISS" fps="24" y="45" name="singLEFTmiss" indices="[]"/>
+	<anim loop="false" x="-15" anim="BF NOTE DOWN MISS" fps="24" y="-1" name="singDOWNmiss" indices="[]"/>
+	<anim loop="false" x="-48" anim="BF NOTE UP MISS" fps="24" y="53" name="singUPmiss" indices="[]"/>
+	<anim loop="false" x="-48" anim="BF NOTE RIGHT MISS" fps="24" y="42" name="singRIGHTmiss" indices="[]"/>
+	<anim loop="false" x="-3" anim="BF HEY" fps="24" y="5" name="hey" indices="[]"/>
+	<anim loop="false" x="15" anim="BF hit" fps="24" y="18" name="hurt" indices="[]"/>
+	<anim loop="true" x="-4" anim="BF idle shaking" fps="24" y="0" name="scared" indices="[]"/>
+	<anim loop="false" x="37" anim="BF dies" fps="24" y="11" name="firstDeath" indices="[]"/>
+	<anim loop="true" x="37" anim="BF Dead Loop" fps="24" y="5" name="deathLoop" indices="[]"/>
+	<anim loop="false" x="37" anim="BF Dead confirm" fps="24" y="69" name="deathConfirm" indices="[]"/>
+	<anim loop="false" x="-10" anim="boyfriend dodge" fps="24" y="-16" name="dodge" indices="[]"/>
+	<anim loop="false" x="294" anim="boyfriend attack" fps="24" y="267" name="attack" indices="[]"/>
+	<anim loop="false" x="-40" anim="bf pre attack" fps="24" y="-40" name="pre-attack" indices="[]"/>
+</character>
