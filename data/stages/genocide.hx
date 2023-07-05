@@ -44,6 +44,9 @@ function create() {
 
 // Shaky screen by Ne_Eo
 function shakeWindow(magnitude:Float){
+	if (FlxG.save.data.shakeShit) {
+		return false; // I have no clue why it doesn't work
+	} else {
 		var randX:Bool = FlxG.random.bool(50);
 		var randY:Bool = FlxG.random.bool(50);
 
@@ -57,8 +60,7 @@ function shakeWindow(magnitude:Float){
 			Lib.application.window.x -= xm * (randX ? 1 : -1);
 			Lib.application.window.y -= xm * (randY ? 1 : -1);
 		});
-		if (FlxG.save.data.shakeShit)
-			return false; // I have no clue why it doesn't work
+	}
 }
 
 function onDadHit(event:NoteHitEvent) {
