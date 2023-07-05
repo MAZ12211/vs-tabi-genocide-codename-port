@@ -37,6 +37,10 @@ function onPlayerHit(event) {
         healthBarBG.x += 0;
         moveBar = true;
     }
+
+    if (event.note.isSustainNote) {
+        FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom + 0.02}, Conductor.crochet / 2000); 
+    }
 }
 
 function onDadHit(event:NoteHitEvent) {
@@ -53,6 +57,7 @@ function onDadHit(event:NoteHitEvent) {
 
     if (event.note.isSustainNote && health > 0.03) {
         health -= 0.0005;
+        FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom + 0.05}, Conductor.crochet / 2000); 
         // trace("Yo Hold note");
     }
 
