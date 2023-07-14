@@ -102,12 +102,12 @@ function onDadHit(event:NoteHitEvent) {
 function update() {
     // sprite.alpha = health / 1;
 
-    if (health / 2 - 1 && !FlxG.save.data.shaderShit) {
+    if (health / 2.8 - 1 && !FlxG.save.data.shaderShit) {
         bright.iTime = 2 / 32;
         bright.contrast = 2 / 8;
     } else {
-        bright.iTime = health / 2;
-        bright.contrast = health / 2;
+        bright.iTime = health / 2.8;
+        bright.contrast = health / 2.8;
     }
 
 	if (!FlxG.save.data.shakeShit)

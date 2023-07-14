@@ -6,10 +6,11 @@ var moveBar = true;
 
 function create() {
     if (tabiHealthBar)
-        health += 100;
+        @:bypassAccessor maxHealth += 0.8;
 }
 function postCreate() {
-	health += 0.8;
+	health += 1.1;
+    // canDie = false;
 }
 
 function update() {
@@ -19,7 +20,7 @@ function update() {
 }
 
 function onPlayerHit(event) {
-	health += 0.050;
+	health += 0.050; //0.050
 
     if (health > 1.950 && moveBar == true) {
         healthBar.x -= 20;
@@ -52,7 +53,7 @@ function onDadHit(event:NoteHitEvent) {
     }
 
     if (drainHealth == true && healthBar.x > 343.2 || healthBarBG.x > 343.2) {
-        health -= 0.03;
+        health -= 0.03; //0.03
     }
 
     if (event.note.isSustainNote) {

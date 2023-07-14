@@ -3,6 +3,12 @@ Codename port of the song Genocide along with a retrospecter remix of the song <
 If you have a hard time playing the port in terms of performance look for Genocide port in Options.
 If the songs are too hard to beat, switch difficulties.
 
+# to-dos
+- rechart retrospecter remix
+- Look into Genocide's chart for potential offsync notes?
+- Upload to Youtube for showcase
+- Upload to gamebanana maybe?
+
 ## [Original mod gamebanana page](https://gamebanana.com/mods/286388 "Original mod gamebanana page")
 # Credits for the original and the remix mod
 - Homskiy - Writer / Project Manager / Gametester
