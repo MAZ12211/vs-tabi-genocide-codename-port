@@ -135,7 +135,7 @@ function postUpdate(elapsed:Float) {
         FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, 0.95);
     }
 
-	if  (FlxG.save.data.shaderShit)
+	if (FlxG.save.data.shaderShit)
 		chromaticAberration.iTime = 0;
 }
 

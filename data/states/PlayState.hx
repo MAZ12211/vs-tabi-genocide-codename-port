@@ -1,4 +1,4 @@
-function postUpdate(elapsed) {
+function postUpdate(elapsed:Float) {
     if (curCameraTarget == 1) {
         switch (boyfriend.animation.curAnim.name) {
             case "singDOWN": camFollow.y += 20 * elapsed;
