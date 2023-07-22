@@ -4,5 +4,5 @@
     "icon": "tabi-crazy",
     "color": "#2E354B",
     "coopAllowed": false,
-    "opponentModeAllowed": false
+    "opponentModeAllowed": true
 }
