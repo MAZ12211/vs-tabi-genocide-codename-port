@@ -133,21 +133,23 @@ function update() {
 function postUpdate(elapsed:Float) {
     camFollow.setPosition(650 * 2, 750);
 
-    if (curCameraTarget == 0) {
-        // trace("CPU");
-		// defaultCamZoom = 0.75;
-        chromaticAberration.iTime = 2;
-        camFollow.setPosition(550 * 2, 750);
-		FlxTween.tween(FlxG.camera, {zoom: 0.75}, (Conductor.stepCrochet * 4 / 2000), {ease: FlxEase.elasticInOut});
-        FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, 0.95);
-    } else {
-        // trace("BF");
-		 // defaultCamZoom = 0.6;
-        chromaticAberration.iTime = 0;
-        camFollow.setPosition(700 * 2, 750);
-		FlxTween.tween(FlxG.camera, {zoom: 0.65}, (Conductor.stepCrochet * 4 / 2000), {ease: FlxEase.elasticInOut});
-        FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, 0.95);
-    }
+	switch (curCameraTarget) {
+		case 0:
+			if (FlxG.save.data.shakeShit || !PlayState.opponentMode) {
+				camGame.shake(0, 0, null, false);
+			} else {
+				camGame.shake(0.01, 0.01, null, true);
+			}
+			chromaticAberration.iTime = 2;
+        	camFollow.setPosition(550 * 2, 750);
+			FlxTween.tween(FlxG.camera, {zoom: 0.75}, (Conductor.stepCrochet * 4 / 2000), {ease: FlxEase.elasticInOut});
+        	FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, 0.95);
+		case 1:
+			chromaticAberration.iTime = 0;
+        	camFollow.setPosition(700 * 2, 750);
+			FlxTween.tween(FlxG.camera, {zoom: 0.65}, (Conductor.stepCrochet * 4 / 2000), {ease: FlxEase.elasticInOut});
+       		FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, 0.95);
+	}
 
 	if (FlxG.save.data.shaderShit)
 		chromaticAberration.iTime = 0;
