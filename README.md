@@ -8,7 +8,9 @@ If the songs are too hard to beat, switch difficulties.
 - [x] Look into Genocide's chart for potential offsync notes?
 - [ ] Upload to Youtube for showcase
 - [ ] Upload to gamebanana maybe?
-- [ ] Opponent mode? Won't happen sadly. Too dumb.
+- [x] bad Opponent mode? Won't happen sadly. Too dumb.
+- [ ] good Opponent mode? Won't happen sadly. Too dumb.
+- [x] Credits
 
 ## [Original mod gamebanana page](https://gamebanana.com/mods/286388 "Original mod gamebanana page")
 # Credits for the original and the remix mod
