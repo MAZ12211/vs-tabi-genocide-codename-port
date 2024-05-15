@@ -1,3 +1,5 @@
+# This repo is no longer maintained
+
 # vs-tabi-genocide-codename-port
 Codename port of the song Genocide along with a retrospecter remix of the song <br>
 If you have a hard time playing the port in terms of performance look for Genocide port in Options.
